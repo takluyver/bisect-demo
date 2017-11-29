@@ -1,2 +1,3 @@
 import sys
-print(int(sys.argv[1]) * int(sys.argv[1]))
+n = int(sys.argv[1])
+print(n * n)
