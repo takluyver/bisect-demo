@@ -6,7 +6,7 @@ build-backend = "flit.buildapi"
 module = "square"
 author = "Thomas Kluyver"
 author-email = "thomas@kluyver.me.uk"
-home-page = "https://github.com/takluyver/square"
+home-page = "https://github.com/takluyver/bisect-demo"
 classifiers = ["License :: OSI Approved :: MIT License"]
 
 [tool.flit.scripts]
