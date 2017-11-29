@@ -8,4 +8,7 @@ if not (sys.argv[1].isdigit() or (sys.argv[1].startswith('-') and sys.argv[1][1:
     sys.exit(1)
 
 n = int(sys.argv[1])
-print(n * n)
+ref = 0
+for i in range(n):
+    ref += n
+print(ref)
