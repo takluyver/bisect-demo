@@ -6,14 +6,10 @@ __version__ = '0.1'
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('n', help='Number to square')
+    ap.add_argument('n', help='Number to square', type=int)
     args = ap.parse_args()
 
-    try:
-        n = int(args.n)
-    except ValueError:
-        print(args.n, 'is not an integer')
-        sys.exit(1)
+    n = args.n
 
     ref = 0
     for i in range(n):
