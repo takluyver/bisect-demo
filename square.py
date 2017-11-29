@@ -1,14 +1,15 @@
+import argparse
 import sys
 
 def main():
-    if len(sys.argv) < 2:
-        print('Give me a number!')
-        sys.exit(1)
+    ap = argparse.ArgumentParser()
+    ap.add_argument('n', help='Number to square')
+    args = ap.parse_args()
 
     try:
-        n = int(sys.argv[1])
+        n = int(args.n)
     except ValueError:
-        print(sys.argv[1], 'is not an integer')
+        print(args.n, 'is not an integer')
         sys.exit(1)
 
     ref = 0
