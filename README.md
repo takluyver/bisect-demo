@@ -43,8 +43,8 @@ We need to try it and tell git if it's good (working) or bad (broken).
     [ebe7c91e9d7c558a61ebed24b45adf181f5020f7] Multiplication is just repeated addition
 
 Each time we say `git bisect bad` or `git bisect good`, git will give us a new
-commit to try. After a few times, it has narrowed it down to one commit—
-[this one](https://github.com/takluyver/bisect-demo/commit/ebe7c91e9d7c558a61ebed24b45adf181f5020f7).
+commit to try. After a few times, it has narrowed it down to one commit—[this
+one](https://github.com/takluyver/bisect-demo/commit/ebe7c91e9d7c558a61ebed24b45adf181f5020f7).
 
     ebe7c91e9d7c558a61ebed24b45adf181f5020f7 is the first bad commit
     commit ebe7c91e9d7c558a61ebed24b45adf181f5020f7
