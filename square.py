@@ -6,9 +6,9 @@ __version__ = '0.1'
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('n', help='Number to square', type=int)
-    args = ap.parse_args()
+    arguments = ap.parse_args()
 
-    n = args.n
+    n = arguments.n
 
     ref = 0
     for i in range(n):
